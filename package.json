@@ -9,10 +9,12 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "menubar": "^6.0.8"
+  },
   "devDependencies": {
     "electron": "^6.0.11",
     "electron-builder": "^21.2.0",
-    "menubar": "^6.0.8"
   },
   "build": {
     "appId": "your.id",
