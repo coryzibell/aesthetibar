@@ -102,8 +102,13 @@
           "?": "？"
         };
 
+        function escapeRegExp(string) {
+          return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); // $& means the whole matched string
+        }
+
           for (var keyVar in aesthetic) {
-            stringVar = stringVar.replace(keyVar, window.aesthetic[keyVar]);
+            re = new RegExp(escapeRegExp(keyVar),"g")
+            stringVar = stringVar.replace(re, window.aesthetic[keyVar]);
           }
 
           return stringVar

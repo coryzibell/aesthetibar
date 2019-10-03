@@ -20,6 +20,7 @@
     "appId": "your.id",
     "mac": {
       "category": "public.app-category.utilities"
-    }
+    },
+    "extraFiles": ["icon.png", "icon@2x.png"]
   }
 }
