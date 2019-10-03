@@ -8,7 +8,8 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "electron-builder": "^21.2.0",
     "menubar": "^6.0.8"
   }
 }
